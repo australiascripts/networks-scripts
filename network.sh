@@ -9,5 +9,7 @@ echo 'net.ipv4.tcp_sack = 1' >> /etc/sysctl.conf
 echo 'net.ipv4.tcp_no_metrics_save = 1' >> /etc/sysctl.conf
 echo 'net.core.netdev_max_backlog = 5000' >> /etc/sysctl.conf
 echo 'net.ipv4.icmp_echo_ignore_all=1' >> /etc/sysctl.conf
+echo 'net.core.default_qdisc=fq' >> /etc/sysctl.conf
+echo 'net.ipv4.tcp_congestion_control=bbr' >> /etc/sysctl.conf
 sysctl -p
 echo 'Done'
