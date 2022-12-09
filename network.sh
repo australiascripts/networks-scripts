@@ -1,6 +1,4 @@
 #!/bin/bash
-echo 'Network Optimisations'
-echo 'To apply linux tcp network optimistations hit enter'
 echo 'net.core.wmem_max=12582912' >> /etc/sysctl.conf
 echo 'net.core.rmem_max=12582912' >> /etc/sysctl.conf
 echo 'net.ipv4.tcp_rmem= 10240 87380 12582912' >> /etc/sysctl.conf
